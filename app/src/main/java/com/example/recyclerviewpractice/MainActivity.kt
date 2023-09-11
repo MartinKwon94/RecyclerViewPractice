@@ -1,14 +1,9 @@
 package com.example.recyclerviewpractice
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
-import androidx.activity.result.ActivityResultLauncher
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.recyclerviewpractice.databinding.ActivityMainBinding
-import java.util.zip.Inflater
 
 class MainActivity : AppCompatActivity() {
 

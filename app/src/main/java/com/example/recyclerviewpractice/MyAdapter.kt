@@ -1,19 +1,12 @@
 package com.example.recyclerviewpractice
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewpractice.databinding.MylistBinding
 
 class MyAdapter(private val mitems: MutableList<Item>) :
     RecyclerView.Adapter<MyAdapter.Holder>() {
-
-//    interface ItemClick {
-//        fun onClick(view: View, position: Int)
-//    }
-//    var itemClick: ItemClick? = null
-    //인터페이스를 통해 메인으로 클릭이벤트 넘기기
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyAdapter.Holder {
         val binding = MylistBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return Holder(binding)
@@ -38,7 +31,7 @@ class MyAdapter(private val mitems: MutableList<Item>) :
         return mitems.size
     }
 
-//홀더 이너클래스로 선언하기
+    //홀더 이너클래스로 선언하기
     inner class Holder(binding: MylistBinding) : RecyclerView.ViewHolder(binding.root) {
         val image = binding.ivImage
         val item1 = binding.tv01
